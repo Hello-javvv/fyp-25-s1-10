@@ -1,0 +1,175 @@
+body {
+	background-color: white;
+	color: black;
+}
+.banner-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.dvc {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px; /* Adds space under the banner */
+}
+
+.dvc iframe, .dvc video {
+	width: 100%; /* Adjusts the width of the video */
+	height: auto; /* Ensures the video maintains its aspect ratio */
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+	position: absolute;
+	top: 20px;
+	right: 100px;
+}
+
+nav ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+	display: flex;  /* This aligns the items in a row */
+}
+nav li{
+	margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    color: black;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 5px; 
+}
+
+.nav-link.active {
+  color: yellow;
+}
+
+nav a img {
+	width: 20px;
+	height: auto;
+	vertical-align: sub;
+	margin-right: 8px;
+}
+
+nav.landing{
+	position: absolute;
+	top: 20px;
+	right: 25px;
+}
+
+
+nav.content {
+  margin-top: 50px; /* Adjust this value as needed */
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-menu {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 40px;
+    left: -30px;
+	border: none; 
+    background-color: white;
+    min-width: 80px;
+    z-index: 100;
+	padding: 0;
+}
+
+nav .dropdown-menu li {
+    padding: 5px 10px;
+}
+
+nav .dropdown-menu li a {
+    color: black;
+    font-weight: bold;
+	font-size: 15px;
+	padding: 5px 10px; /* Reduce padding around the text */
+    display: block;
+}
+
+nav .dropdown-menu li a:hover {
+	background-color: lightgrey;
+	border-radius: 5px; 
+}
+
+
+nav .dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown when hovering over parent */
+}
+
+body.UM nav a {
+    color: black;  /* Change the "Home" link text color to black */
+}
+
+body.DV nav a {
+    color: black;  /* Change the "Home" link text color to black */
+}
+
+.demoVideo {
+	display: flex;
+	justify-content: center;
+	gap: 20px; /* space between the videos */
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+.demoVideo iframe, .demoVideo video {
+	width: 500px;
+	transition: transform 0.3s ease;
+	border-radius: 10px;
+}
+.demoVideo iframe:hover, .demoVideo video:hover{
+	transform: scale(1.2);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+
+.OVUM {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 36px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.UMD .embed-wrapper {
+	overflow-x: auto;
+	text-align: center;
+}
+#topper {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	opacity:0.5;
+	border: none;
+	border-radius: 5px;
+}
+
+#topper span {
+  display: block;
+  font-size: 10px; /* Adjust the font size */
+  color: black;
+  margin-top: 3px;
+}
+
+#topper img {
+	width: 25px;
+	height: 25px;
+	object-fit: contain;
+}
+
+#topper:hover {
+	opacity:1;
+}
